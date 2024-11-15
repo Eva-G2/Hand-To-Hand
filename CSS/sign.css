@@ -1,0 +1,124 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr; 
+    grid-template-rows:100vh;
+    column-gap:0px;
+}
+/*----------head-----------------*/
+
+.head{
+    background-color: #96c864;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h1{
+    font-family: Grandstander;
+    font-size: 6vw;
+    text-align: center; 
+    color:#463c82;
+    padding-bottom: 1vh;
+
+}
+/*---------------main-------------*/
+.box{
+    width:30vw;
+    height:60vh;
+
+    background-color: #fff;
+    border:5px solid #96c864;
+    border-radius: 10%;
+    box-shadow: 5px 5px 0px #96c864;
+
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top:4vh;
+
+    padding-left:2vw;
+    padding-right:3vw;
+    padding-top:6vh;
+    padding-bottom:3vh;
+}
+
+lable{
+    color:#463c82;
+    font-family:Afacad Flux;;
+    font-size: 28px;
+
+}
+input,textarea{
+    width:100%;
+    padding-left:10px;
+    padding-right: 10px;
+    
+    border:2px solid #999999;
+    border-radius: 20px;
+    height: 5vh;
+    margin-bottom: 3vh;
+
+    font-size:18px;
+}
+input:focus, textarea:focus{
+    outline:none;
+    border: 3px solid #96c864;
+}
+
+p{
+    color:#000000;
+    font-family:Afacad Flux;
+    font-size: 24px;
+    text-align: center;
+
+    padding-top: 2vh;
+}
+
+/*------------------Button-------------------*/
+button{
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 4vh;
+
+    width:150px;
+    height:80px;
+    background-color: #463c82;
+    border:3px solid #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px #463c82;
+    margin-top: 15px;
+
+}
+button a{
+    text-decoration: none;
+    font-family: Grandstander;
+    font-size: 21pt;
+    color: #fff;
+    text-align: center;
+}
+button:hover{
+    background-color: #96c864;
+    border:3px solid #fff;
+    box-shadow: 3px 3px 0px #96c864;
+}
+
+button a:hover{
+    color: #463c82;
+    font-weight: 600;
+}
+button:active {
+    box-shadow: 0 2px #96c864;
+    transform: translateY(3px);
+}
+
+.cat{
+    width: 18vw;
+    position: absolute;
+    bottom:10px;
+    right:20px;
+}

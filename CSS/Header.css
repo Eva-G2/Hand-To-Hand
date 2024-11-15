@@ -1,0 +1,31 @@
+.top{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; 
+    border-bottom: 3px solid #999999;
+    margin-bottom: 3px;
+}
+.Icons{
+    display: flex;
+}
+h1{
+    font-family: Grandstander;
+    font-size: 27pt;
+    text-align: center; 
+    color:#463c82;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+
+    column-gap:0px;
+    margin:0;
+    padding:0;
+}
+img{
+    height:50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

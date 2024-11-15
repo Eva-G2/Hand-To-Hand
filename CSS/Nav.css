@@ -1,0 +1,53 @@
+.side{
+    position: sticky;
+}
+.nav{
+    background-color: #999999;
+    height: 100vh;
+    margin-top: 0px;
+    
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.nav a{
+    font-family: Afacad Flux;
+    font-weight: 600;
+    font-size: 21pt;
+    color: #463c82;
+    text-decoration: none;   
+}
+.nav a:hover{
+    font-weight: 800;
+    text-decoration: underline;
+}
+.cube{
+    background-color: white;
+    border: 2.5px solid #96c864;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #96c864;
+    width:15vw;
+
+    height:5vh;
+    padding-top:8px;
+    padding-bottom:2px;
+
+    margin-left:2vw;
+    margin-right:2vw; 
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.profile{
+    width:10vw;
+    border: 1vw solid #463c82;
+    border-radius: 50%;
+    background-color: #463c82;
+
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 3vh;
+}
+

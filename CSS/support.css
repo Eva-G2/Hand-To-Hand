@@ -1,0 +1,123 @@
+/*--------------------overall-----------------------*/
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr; 
+    grid-template-rows:100vh;
+    column-gap:0px;
+}
+
+/*--------------------Form Box-----------------------*/
+.box{
+    width:40vw;
+    height:60vh;
+
+    background-color: #fff;
+    border:5px solid #96c864;
+    border-radius: 10%;
+    box-shadow: 5px 5px 0px #96c864;
+
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top:4vh;
+
+    padding-left:3vw;
+    padding-right:4vw;
+    padding-top:3vh;
+    padding-bottom:3vh;
+}
+h1{
+    font-family: Grandstander;
+    font-size: 27pt;
+    text-align: center; 
+    color:#463c82;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+.columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 2vw;
+    max-width: fit-content;
+}
+
+lable{
+    color:#463c82;
+    font-family:Afacad Flux;;
+    font-size: 28px;
+
+}
+input,textarea{
+    width:100%;
+    font-size:18px;
+    border:2px solid #999999;
+    border-radius: 12px;
+    height: 4vh;
+
+    padding-left:10px;
+    padding-right: 10px;
+
+    margin-bottom: 1.5vh;
+}
+input:focus, textarea:focus{
+    outline:none;
+    border: 3px solid #96c864;
+}
+/*------------------Button-------------------*/
+button{
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 4vh;
+
+    width:150px;
+    height:80px;
+    background-color: #463c82;
+    border:3px solid #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px #463c82;
+    margin-top: 15px;
+
+}
+button a{
+    text-decoration: none;
+    font-family: Grandstander;
+    font-size: 21pt;
+    color: #fff;
+    text-align: center;
+}
+button:hover{
+    background-color: #96c864;
+    border:3px solid #fff;
+    box-shadow: 3px 3px 0px #96c864;
+}
+
+button a:hover{
+    color: #463c82;
+    font-weight: 600;
+}
+button:active {
+    box-shadow: 0 2px #96c864;
+    transform: translateY(3px);
+}
+/*------------------Decoration-------------------*/
+.TY img{
+    Width:81%;
+    position: absolute;
+    bottom:0px;
+    }
+
+@media screen and (max-width:1400px){
+    .columns{
+    grid-template-columns: 1fr; 
+    }
+    input,textarea{
+        height: 3vh;
+        margin-bottom:10px;
+    }
+}

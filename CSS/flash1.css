@@ -1,0 +1,237 @@
+
+
+.containor{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-top: 5vh;
+    height:55vh;
+}
+/*-----------------card it self------------------*/
+.card {
+      background-color:transparent;
+      width:70vw;
+      height: 45vw;
+      perspective: 1000px;
+    }
+  
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+.card:hover .inner {transform: rotateY(180deg);}
+  
+.front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  
+.front {
+      background-color:white;
+      border: 5px solid #999999;
+      border-radius: 20px;
+      box-shadow: 4px 4px 0px #999999;
+
+      display: flex;
+      align-items:center;
+      justify-content:flex-start;
+    }
+  
+.back{
+      background-color: rgb(255, 255, 255);
+      border: 5px solid #999999;
+      border-radius: 20px;
+      box-shadow: 4px 4px 0px #999999;
+      
+      transform: rotateY(180deg);
+      
+      display: flex;
+      align-items:center;
+      justify-content:flex-start;
+    }
+
+/*-----------------layout on card--------------*/
+
+.left{
+    width:25vw;
+    height: 45vw;
+    background-color:rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.right{
+    width:45vw;
+    height: 45vw;
+    background-color:rgb(150,200,100);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.left2{
+    width:25vw;
+    height: 45vw;
+    background-color:rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.right2{
+    width:45vw;
+    height: 45vw;
+    background-color:rgb(70,60,130);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/*-------------------content on card--------------*/
+h2{
+    font-size: 60px;
+    font-family:Grandstander;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.image, .video{
+    height:45vh;
+    margin-top:2vh;
+    border-radius: 20px;
+    margin-right: 1.5vw;
+}
+h3{
+    width:10vw;
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+
+    background-color: white;
+    border: 3px solid #999999;
+    border-radius: 15px;
+    box-shadow: 2px 2px 0px #999999;
+
+    font-family: Grandstander;
+    font-size: 1.3vw;
+    text-align: center;
+
+    padding-top:8px;
+    padding-bottom:5px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+h4{
+    margin-left: 2vw;
+    
+    background-color: white;
+    border: 3px solid #999999;
+    border-radius: 15px;
+    box-shadow: 2px 2px 0px #999999;
+    width:120px;
+
+    font-family: Grandstander;
+    font-size: 18pt;
+    font-weight: 900;
+    color: #463c82;
+    text-align: center;
+
+    padding-top:8px;
+    padding-bottom:5px;
+}
+
+/*----------------button-------------*/
+
+button{
+    background-color: #463c82;
+    border-radius: 60px;
+
+    border:3px solid #fff;
+    box-shadow: 4px 4px 0px #463c82;
+
+    padding-top:5px;
+    padding-bottom: 5px;
+
+    margin-top: 3vw;
+}
+
+.P{
+    float:left;
+    transform: translateY(1vh) translateX(39vw);
+}
+.N{
+    float:right;
+    transform: translateY(1vh) translateX(-41vw);
+}
+
+button a{
+    font-family: Afacad Flux;
+    font-size: 21pt;
+    text-decoration: none;
+    color: #fff; 
+    
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button:hover{
+    background-color: #96c864;
+    border:3px solid #fff;
+    box-shadow: 3px 3px 0px #96c864;
+}
+
+button a:hover{
+    color: #463c82;
+    font-weight: 600;
+}
+.P:active {
+    box-shadow: 0 2px #96c864;
+    transform: translateY(2vh) translateX(39vw);
+}
+
+.N:active{
+    box-shadow: 0 2px #96c864;
+    transform: translateY(2vh) translateX(-41vw);
+}
+/*----------------decoration------------------*/
+.decoration{
+    width:20vw;
+    height:auto;
+    margin:0px;
+
+
+    float: left;
+    transform: translateX(-120px) translateY(-150px);
+}
+/*----------------screen size change------------------*/
+@media screen and (min-width:1100px){
+    .card {
+        width:800px;
+        height: 500px;
+    }
+    img{
+        height:250px;
+        margin-top: 50px;
+    }
+    .right, .right2, .left, .left2{
+        height: 500px;
+    }
+    
+}

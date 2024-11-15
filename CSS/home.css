@@ -1,0 +1,69 @@
+/*--------------------overall-----------------------*/
+body{
+    padding:0px;
+    margin:0px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr; 
+    grid-template-rows:100vh;
+}
+/*--------------------head--------------------*/
+.logo{
+    height:20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cat{
+    height:20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.head{
+    background-color: #96c864;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+}
+
+/*--------------------main--------------------*/
+.paragraph{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    
+}
+.box{
+    display:block;
+    margin-top: 10vh;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    
+    width:60vw;
+
+    background-color: white;
+    border: 5px solid #999999;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px #999999;
+}
+h1{
+    font-family: Grandstander;
+    font-size: 27pt;
+    text-align: center; 
+    color:#463c82;
+    padding-bottom: 5px;
+}
+p{
+    font-family: Afacad Flux;
+    font-weight: 350;
+    font-size: 21pt;
+    color: #000;
+}
+.turtle{
+    width: 18vw;
+    position: absolute;
+    bottom:0px;
+    right:0px;
+
+}

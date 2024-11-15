@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding:0;
+}
+/*---------------------------------header section----------------------------*/
+.top{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; 
+    border-bottom: 3px solid #999999;
+    margin-bottom: 3px;
+}
+.Icons{
+    display: flex;
+}
+h1{
+    font-family: Grandstander;
+    font-size: 27pt;
+    text-align: center; 
+    color:#463c82;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+
+    column-gap:0px;
+    margin:0;
+    padding:0;
+}
+img{
+    height:50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*--------------------------------Content---------------------*/
+
+
+.content img{
+    height: 45vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+
+}
+h2{
+    display:block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    font-family: Grandstander;
+    font-size: 5vw;
+    text-align: center;
+
+    padding-top:8px;
+    color: #463c82;
+
+
+}
+button{
+    background-color: #463c82;
+    border-radius: 60px;
+
+    border:3px solid #fff;
+    box-shadow: 4px 4px 0px #463c82;
+
+    padding-top:5px;
+    padding-bottom: 5px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button a{
+    font-family: Afacad Flux;
+    font-size: 3vw;
+    text-decoration: none;
+    color: #fff; 
+    
+    padding-left:2vw;
+    padding-right: 2vw;
+}
+
+button:hover{
+    background-color: #96c864;
+    border:3px solid #fff;
+    box-shadow: 3px 3px 0px #96c864;
+}
+
+button a:hover{
+    color: #463c82;
+    font-weight: 600;
+}
+.L:active {
+    box-shadow: 0 2px #96c864;
+    transform: translateY(4px);
+}
